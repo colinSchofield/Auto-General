@@ -1,0 +1,8 @@
+server:
+  port: 8080
+  contextPath: bob
+
+logging:
+  level:
+    org.springframework.web: DEBUG
+    com.autogeneral.techtest.angservice: DEBUG

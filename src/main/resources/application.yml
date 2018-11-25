@@ -1,0 +1,18 @@
+server:
+  port: 80
+  servlet:
+    context-path: /techtest/1.0
+
+# Disabled self signed certs - the integrationTest does not work with them (i.e. DEPTH_ZERO_SELF_SIGNED_CERT)
+#
+#  port: 443
+#  ssl:
+#    key-store: classpath:ang-ssl-key.jks
+#    key-store-password: test123
+#    keyStoreType: JKS
+#    key-alias: ang-ssl-key
+
+logging:
+  level:
+    org.springframework.web: DEBUG
+    com.autogeneral.techtest.angservice: DEBUG
