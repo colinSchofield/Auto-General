@@ -1,3 +1,5 @@
+![](logo.png)
+
 # Auto and General Technical Test
 ##### Synopsis
 This program has been written in Java 1.8 as a Spring Boot application. Both the `Tasks` and `Todo` RESTful endpoints have been 
@@ -7,8 +9,6 @@ The application itself is running as an EC2 off of a `t2.micro`, which is deploy
 the **Todo list**, a DynamoDb NoSQL database was used, as this provides the best possible performance, scalability, resilience and cost.
  
 The EC2 is situated behind an ELB and with a mindfulness to production, this would no doubt involve an ASG over multiple Availability Zones.
-
-![](logo.png)
 
 ##### how to run the Application locally
 You must have the following to run this application:
