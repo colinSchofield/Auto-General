@@ -15,7 +15,7 @@ You must have the following to run this application:
 - Java 1.8 compiler 
 - Apache maven 3 
 
-Then do the following:
+Then perform the following:
 ```
 1. mvn clean install
 2. mvn spring-boot:run
@@ -36,16 +36,16 @@ revealing that **100%** of classes and **71%** of lines were covered by the Unit
 
 - At this stage I am running the application on port `80`, *only*. I did have it running under SSL (i.e. port `443`), but I did this by
 using a self-signed signature, which did not play nicely with the Auto and General integration tests, so I have reverted it out, at this
- stage. Further reading indicates that we can get around this by applying a redirect, using an [Application Load Balancer](https://exampleloadbalancer.com/redirect_demo.html).
+ stage. Further research indicates that we can get around this by applying a redirect, using an [Application Load Balancer](https://exampleloadbalancer.com/redirect_demo.html).
  
 - In the past I have used Lambda and Serverless technology. This application is an ideal candidate for this approach. 
 By deploying an Amazon API Gateway (and by using the Swagger configuration as Input) together with DynamoDb, this sounds like 
  the optimal solution and would be a tad cheaper. Note though, that I was hesitant to use this approach because it would not 
  have showcased my abilities with Spring Boot.
 
-- Fully productionising this application, would require a DevOps engineer to bring the application under the CI/CD pipeline.
-The application would probably be loaded into Terraform, the convention followed for creating IAM polices (i.e. allowing roles minimum access to DynamoDb) and the 
-using Ansible/Puppet the configuration files. Also, the application currently is set to write `DEBUG` level of logs to the 
+- Fully productionising this application, will require a DevOps engineer to bring the application under the CI/CD pipeline.
+It is recommended that the application be loaded into Terraform. Also, the convention needs to be followed for creating IAM polices (i.e. allowing roles minimum access to DynamoDb) and the 
+using Ansible/Puppet the configuration files. Finally, the application currently is set to write `DEBUG` level of logs to the 
 console, this would need to be changed, by storing them into a log file and perhaps deploying Kibana or whatever ELK stack 
 is considered the norm at Auto and General.
 
