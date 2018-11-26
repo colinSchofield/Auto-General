@@ -1,6 +1,6 @@
 ![](logo.png)
 
-# Auto and General Technical Test
+# Technical Test
 ##### Synopsis
 This program has been written in Java 1.8 as a Spring Boot application. Both the `Tasks` and `Todo` RESTful endpoints have been 
 implemented, with validation and are both running correctly. They may be tested by pointing your browser at [integrationTest](https://join.autogeneral.com.au/test/1.0/integrationTest?url=http%3A%2F%2F13.239.134.226%2Ftechtest%2F1.0).
